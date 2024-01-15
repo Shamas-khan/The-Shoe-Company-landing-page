@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Poppins:wght@500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-shams;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply px-6 md:px-12 max-w-[1440px] mx-auto;
+  }
+}
+
+/* @layer utilities {
+  .back {
+    background-color: yellow;
+  }
+} */
