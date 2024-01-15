@@ -231,23 +231,22 @@
     </footer>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-      const menu = document.querySelector("#menu");
-      const show = document.querySelector("#clickshow");
-  
-      menu.addEventListener("click", () =>{ 
-        show.classList.toggle("top-28");
-        show.classList.toggle("opacity-[1]");
-      }
-      
-      );
-  
-      show.querySelectorAll("a").forEach(link => link.addEventListener("click", () => show.classList.remove("top-28")));
-      // if (show.classList.contains('top-28')) {
-      //   show.classList.toggle("opacity-[0.8]");
-        
-      // }
-    });
-      </script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menu = document.querySelector("#menu");
+        const show = document.querySelector("#clickshow");
+
+        menu.addEventListener("click", () => {
+          show.classList.toggle("top-28");
+          show.classList.toggle("opacity-[1]");
+        });
+
+        show.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            show.classList.remove("top-28");
+            show.classList.remove("opacity-[1]");
+          });
+        });
+      });
+    </script>
   </body>
 </html>
